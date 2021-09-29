@@ -3,20 +3,18 @@ about：学习HTML和CSS的练习
 
 ---
 
-实现顺序
+### 实现顺序
 
-Myweb.html
+chengxuyuanjihua文件夹
 
-WebForML.html
+- Myweb.html
+- WebForML.html
+- WebForAlice.html
+- work3.html
 
-WebForAlice.html
+pink文件夹
 
-work3.html
-
-pink_1_xiaomi_product.html
-
-pink_2_float.html
-
-pink_3_lunbotu_jingtai.html
-
-pink_4_tudou.html
+- pink_1_xiaomi_product.html
+- pink_2_float.html
+- pink_3_lunbotu_jingtai.html
+- pink_4_tudou.html
