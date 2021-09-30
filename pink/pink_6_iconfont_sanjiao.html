@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字体图标、三角</title>
+    <style>
+        /* 字体声明 */
+        @font-face {
+            font-family: 'icomoon';
+            src: url('fonts/icomoon.eot?p4ssmb');
+            src: url('fonts/icomoon.eot?p4ssmb#iefix') format('embedded-opentype'),
+                url('fonts/icomoon.ttf?p4ssmb') format('truetype'),
+                url('fonts/icomoon.woff?p4ssmb') format('woff'),
+                url('fonts/icomoon.svg?p4ssmb#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+
+        span {
+            font-family: 'icomoon';
+            font-size: 100px;
+            color: pink;
+        }
+
+        /* 宽高为0可以设置边框，制作三角 */
+        .box1 {
+            width: 0;
+            height: 0;
+            border-top: 30px solid pink;
+            border-bottom: 30px solid skyblue;
+            border-left: 30px solid palegreen;
+            border-right: 30px solid palegoldenrod;
+        }
+
+        .box2 {
+            width: 0;
+            height: 0;
+            border: 50px solid transparent;
+            border-bottom-color: pink;
+        }
+
+        .jd {
+            height: 400px;
+            width: 400px;
+            /* background-color: yellow; */
+        }
+
+        .jd p {
+            width: 100px;
+            height: 50px;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 50px;
+            background-color: silver;
+        }
+
+        /* 悬停在手机京东盒子时，显示手机京东二维码显示出来 */
+        .jd p:hover+.jd_ph {
+            display: block;
+        }
+
+        .jd_ph {
+            display: none;
+            position: relative;
+            width: 140px;
+            height: 140px;
+            margin: 10px auto;
+        }
+
+        .jd_ph span {
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            margin-left: -20px;
+            width: 0;
+            height: 0;
+            /* 以下两个是制作三角为了兼容性 */
+            line-height: 0;
+            font-style: 0;
+            /* 制作上三角 */
+            border: 20px solid transparent;
+            border-bottom-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 字体图标 -->
+    <span></span>
+
+    <!-- CSS三角 -->
+    <!-- 1. 原理 -->
+    <div class="box1"></div>
+    <!-- 2. 单个三角的制作 -->
+    <div class="box2"></div>
+    <!-- 3.京东三角案例 -->
+    <div class="jd">
+        <p>手机京东</p>
+        <div class="jd_ph">
+            <span></span>
+            <img src="images/jd.png.webp" alt="">
+        </div>
+    </div>
+
+
+</body>
+
+</html>
