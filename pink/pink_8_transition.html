@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition学习</title>
+    <style>
+        .box1 {
+            height: 200px;
+            width: 200px;
+            background-color: pink;
+            transition: width 1s;
+        }
+
+        .box1:hover {
+            width: 400px;
+        }
+
+        .box2 {
+            height: 200px;
+            width: 200px;
+            background-color: pink;
+            /* 逗号切割 */
+            transition: width 1s, height 1s;
+        }
+
+        .box2:hover {
+            width: 400px;
+            height: 400px;
+        }
+
+        .box3 {
+            height: 200px;
+            width: 200px;
+            background-color: bisque;
+            /* 直接写all */
+            transition: all 1s;
+        }
+
+        .box3:hover {
+            width: 400px;
+            height: 400px;
+        }
+
+        .bar {
+            width: 150px;
+            height: 15px;
+            border: 1px solid red;
+            border-radius: 7px;
+        }
+
+        .bar_in {
+            width: 50%;
+            height: 100%;
+            background-color: red;
+            border-radius: 7px;
+            transition: all 1s;
+        }
+
+        .bar:hover .bar_in {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 1.transition使用 -->
+    <p>1.transition使用</p>
+    <div class="box1"></div>
+
+    <!-- 2.两种属性的变化实现 -->
+    <p>2.两种属性的变化实现</p>
+    <div class="box2"></div>
+
+    <!-- 3.多种属性的变化实现 -->
+    <p>3.多种属性的变化实现</p>
+    <div class="box3"></div>
+
+    <!-- 4.进度条的实现 -->
+    <p>4.进度条的实现</p>
+    <div class="bar">
+        <div class="bar_in"></div>
+    </div>
+</body>
+
+</html>
