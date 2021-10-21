@@ -1,0 +1,692 @@
+/* 首页的样式 */
+
+/* 侧边导航栏 */
+.sub-nav {
+    position: fixed;
+    top: 350px;
+    right: 50%;
+    margin-right: 614px;
+    width: 66px;
+    height: 342px;
+}
+
+.sub-nav ul li {
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    font-size: 12px;
+}
+
+.sub-nav ul li p {
+    width: 56px;
+    height: 100%;
+    margin: 0 auto;
+    border-bottom: 1px solid #ededed;
+}
+
+.sub-nav ul li:hover {
+    background-color: #c81623;
+}
+
+.sub-nav ul li:hover p {
+    border-bottom-color: #c81623;
+}
+
+.sub-nav ul li:hover p a {
+    color: #fff;
+}
+
+
+/* 主体 */
+.main {
+    width: 980px;
+    height: 455px;
+    /* margin: 10px 0 11px 220px; */
+    margin-top: 10px;
+    margin-left: 220px;
+}
+
+/* 轮播图 */
+.main .focus {
+    position: relative;
+    float: left;
+    width: 721px;
+    height: 100%;
+}
+
+.focus .focus_img {
+    width: 100%;
+    height: 100%;
+}
+
+.prev,
+.next {
+    position: absolute;
+    /* 绝对定位盒子的垂直居中 */
+    top: 50%;
+    margin-top: -15px;
+    /* 绝对定位的盒子可直接设置高度和宽度 */
+    width: 35px;
+    height: 45px;
+    font-family: 'icomoon';
+    text-align: center;
+    line-height: 45px;
+    font-size: 18px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.prev {
+    left: 0;
+    border-top-right-radius: 22px;
+    border-bottom-right-radius: 22px;
+}
+
+.next {
+    right: 0;
+    border-top-left-radius: 22px;
+    border-bottom-left-radius: 22px;
+}
+
+.focus_nav {
+    position: absolute;
+    bottom: 10px;
+    /* 绝对盒子的水平居中 */
+    left: 50%;
+    margin-left: -35px;
+    width: 80px;
+    height: 15px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 7px;
+}
+
+.focus_nav li {
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin: 3px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+/* 选中的图片 */
+.focus_nav .selected {
+    background-color: #c81623;
+}
+
+/* 快报 */
+.main .newsflash{
+    float: right;
+    overflow: hidden;
+    width: 250px;
+    height: 100%;
+    border: 1px solid #ccc;
+}
+
+.newsflash .news {
+    height: 165px;
+    border-bottom: 1px solid #e4e4e4;
+
+}
+
+.news-hd {
+    height: 33px;
+    line-height: 33px;
+    border-bottom: 1px dotted #e4e4e4;
+    padding: 0 15px;
+}
+
+.news-hd h5 {
+    float: left;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.news-hd a {
+    float: right;
+}
+
+.news-hd a::after {
+    content: '\e920';
+    font-family: 'icomoon';
+    vertical-align: middle;
+}
+
+.news-bd {
+    padding: 4px 15px;
+}
+
+.news-bd ul li {
+    /* 文字超出部分省略显示 */
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    height: 24px;
+    line-height: 24px;
+}
+
+.newsflash .lifeservice {
+    height: 209px;
+}
+
+.lifeservice ul {
+    width: 252px;
+}
+
+.lifeservice ul li {
+    float: left;
+    width: 63px;
+    height: 71px;
+    padding-top: 12px;
+    text-align: center;
+    border-bottom: 1px solid #e4e4e4;
+    border-right: 1px solid #e4e4e4;
+}
+
+.lifeservice ul li i {
+    display: inline-block;
+    width: 24px;
+    height: 28px;
+}
+
+.lifeservice ul li:nth-child(1) i {
+    background: url('../images/icons.png') no-repeat -19px -15px;
+}
+
+.lifeservice ul li:nth-child(2) i {
+    background: url('../images/icons.png') no-repeat -78px -15px;
+}
+
+.lifeservice ul li:nth-child(3) i {
+    background: url('../images/icons.png') no-repeat -140px -15px;
+}
+
+.lifeservice ul li:nth-child(4) i {
+    background: url('../images/icons.png') no-repeat -205px -15px;
+}
+
+.lifeservice ul li:nth-child(5) i {
+    background: url('../images/icons.png') no-repeat -16px -87px;
+}
+
+.lifeservice ul li:nth-child(6) i {
+    background: url('../images/icons.png') no-repeat -78px -87px;
+}
+
+.lifeservice ul li:nth-child(7) i {
+    background: url('../images/icons.png') no-repeat -140px -87px;
+}
+
+.lifeservice ul li:nth-child(8) i {
+    background: url('../images/icons.png') no-repeat -205px -87px;
+}
+
+.lifeservice ul li:nth-child(9) i {
+    background: url('../images/icons.png') no-repeat -16px -158px;
+}
+
+.lifeservice ul li:nth-child(10) i {
+    background: url('../images/icons.png') no-repeat -78px -158px;
+}
+
+.lifeservice ul li:nth-child(11) i {
+    background: url('../images/icons.png') no-repeat -140px -158px;
+}
+
+.lifeservice ul li:nth-child(12) i {
+    background: url('../images/icons.png') no-repeat -205px -158px;
+}
+
+
+.newsflash .bargain {
+    margin-top: 5px;
+}
+
+/* 推荐模块 */
+.recom {
+    height: 163px;
+    margin-top: 12px;
+}
+
+.recom_hd {
+    float: left;
+    height: 163px;
+    width: 205px;
+    background: #5c5251 url(../images/recom.png) no-repeat center;
+}
+
+.recom_bd {
+    float: left;
+    width: 994px;
+    background-color: #ebebeb;
+
+}
+
+.recom_bd ul li {
+    position: relative;
+    float: left;
+}
+
+.recom_bd ul li img {
+    width: 248px;
+    height: 163px;
+}
+
+.recom_bd ul li:nth-child(-n+3):after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 1px;
+    height: 145px;
+    background-color: #ddd;
+}
+
+/* 猜你喜欢 */
+.guesslove {
+    height: 265px;
+    margin-top: 28px;
+}
+
+.guesslove_hd {
+    height: 24px;
+    line-height: 24px;
+}
+
+.guesslove_hd h4{
+    float: left;
+    font-size: 18px;
+    color: #333;
+    font-weight: 400;
+}
+
+.guesslove_hd a {
+    float: right;
+    margin-right: 21px;
+    font-size: 12px;
+    color: #666;
+}
+
+.guesslove_hd a::after {
+    content: '\ea2e';
+    font-family: 'icomoon';
+    margin-left: 9px;
+}
+
+.guesslove_bd {
+    height: 233px;
+    margin-top: 4px;
+    border: 1px solid #ededed;
+}
+
+.guesslove_bd ul {
+    overflow: hidden;
+}
+
+.guesslove_bd ul li {
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 233px;
+}
+
+.guesslove_bd ul li:last-child {
+    width: 190px;
+}
+
+.guesslove_bd ul li:nth-child(-n+5)::after {
+    position: absolute;
+    right: 0;
+    bottom: 9px;
+    content: '';
+    width: 1px;
+    height: 63px;
+    background-color: #ededed;
+}
+
+.guesslove_bd ul li img {
+    height: 160px;
+    width: 200px;
+}
+
+.guesslove_bd ul li a {
+    display: block;
+    width: 130px;
+    margin: 0 auto;
+    line-height: 18px;
+    font-size: 12px;
+}
+
+.guesslove_bd ul li span {
+    display: block;
+    width: 130px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #df3033;
+}
+
+/* 有趣区域 */
+.interest {
+    height: 433px;
+    margin-top: 20px;
+}
+
+.interest .interest_hd{
+    height: 24px;
+    line-height: 24px;
+}
+
+.interest_hd h4{
+    float: left;
+    font-size: 18px;
+    color: #333;
+    font-weight: 400;
+}
+
+.interest_bd {
+    overflow: hidden;
+    height: 405px;
+    margin-top: 4px;
+    border: 1px solid #ededed;
+}
+
+.interest_bd .books {
+    float: left;
+    width: 404px;
+    margin-left: -1px;
+}
+
+.interest_bd .books img {
+    height: 100%;
+    width: 100%;
+}
+
+.interest_bd .goods {
+    float: left;
+    width: 227px;
+    height: 100%;
+    border-right: 1px solid #ededed;
+}
+
+.interest_bd .goods h6 {
+    width: 191px;
+    height: 40px;
+    margin: 0 auto;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    border-bottom: 1px dashed #ededed;
+}
+
+.interest_bd .goods a {
+    display: block;
+}
+
+.interest_bd .goods a:first-of-type {
+    height: 207px;
+    width: 100%;
+    border-bottom: 1px solid #ededed;
+}
+
+
+.interest_bd .goods a:last-of-type {
+    height: 158px;
+}
+
+.interest_bd .bandstreet {
+    float: left;
+    width: 405px;
+    height: 100%;
+    text-align: center;
+    background-color: #f7f7f7;
+    border-right: 1px solid #ededed;
+}
+
+.interest_bd .bandstreet h6 {
+    width: 365px;
+    height: 40px;
+    margin: 0 auto;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    border-bottom: 1px dashed #ededed;
+}
+
+.interest_bd .bandstreet>a {
+    display: block;
+    height: 207px;
+    border-bottom: 1px solid #ededed;
+}
+
+.interest_bd .bandstreet div {
+    float: left;
+    height: 158px;
+    width: 50%;
+}
+
+.interest_bd .bandstreet div:first-of-type {
+    border-right: 1px solid #ededed;
+}
+
+.interest_bd .bandstreet div a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-right: 0;
+}
+
+.interest_bd .bandstreet div a img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.interest_bd .bands {
+    float: left;
+    width: 37px;
+}
+
+
+/* 楼层区域 */
+
+.floor .w {
+    margin-top: 30px;
+}
+
+.box_hd {
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 2px solid #c81623;
+}
+
+.box_hd h3 {
+    float: left;
+    font-size: 18px;
+    color: #c81623;
+    font-weight: 400;
+}
+
+.box_hd .tab_list {
+    float: right;
+}
+
+.box_hd .tab_list ul li {
+    float: left;
+}
+
+.box_hd .tab_list ul li a {
+    padding: 0 13px;
+}
+
+.box_bd {
+    height: 361px;
+}
+
+.tab_list_item>div {
+    float: left;
+    height: 360px;
+}
+
+.col_210 {
+    width: 210px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.col_210 ul {
+    padding-left: 12px;
+}
+
+.col_210 ul li {
+    float: left;
+    width: 85px;
+    height: 34px;
+    margin-right: 10px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    line-height: 33px;
+}
+
+.col_329 {
+    width: 329px;
+}
+
+.col_221 {
+    width: 221px;
+    border-right: 1px solid #ccc;
+}
+
+.col_219 {
+    width: 219px;
+    border-right: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.col_221 a, 
+.col_219 a {
+    display: block;
+    border-bottom: 1px solid #ccc;
+}
+
+.box_ft {
+    margin-top: 19px;
+    height: 66px;
+    overflow: hidden;
+}
+
+.hot {
+    margin-top: 25px;
+    height: 318px;
+}
+
+.hot_hd h4{
+    height: 24px;
+    line-height: 24px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.hot_bd {
+    margin-top: 8px;
+    height: 283px;
+    border: 1px solid #ededed;
+}
+
+.hot_bd>div {
+    float: left;
+    height: 281px;
+}
+
+.hot_bd span{
+    color: #df3033;
+    font-size: 16px;
+}
+
+.hot_top {
+    width: 240px;
+    padding-top: 30px;
+    padding-left: 30px;
+    border-right: 1px solid #ededed;
+}
+
+.hot_top div {
+    margin-top: 40px;
+}
+
+.hot_top div a {
+    font-size: 12px;
+}
+
+.hot_others {
+    width: 660px;
+}
+
+.hot_others ul li {
+    float: left;
+    width: 220px;
+    height: 141px;
+    padding-top: 20px;
+    padding-left: 10px;
+    border-right: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+}
+
+.hot_others ul li img {
+    float: left;
+}
+
+.hot_others ul li div {
+    float: left;
+    margin-left: 5px;
+}
+
+.hot_others ul li div a {
+    display: block;
+    width: 100px;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.hot_comment {
+    width: 297px;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+.hot_comment ul li {
+    height: 86px;
+    margin-top: 34px;
+}
+
+.hot_comment ul li>div {
+    float: left;
+}
+
+
+.comment {
+    margin-left: 20px;
+}
+
+.comment>div {
+    position: relative;
+    margin-top: 5px;
+}
+
+.comment div p {
+    width: 165px;
+    height: 54px;
+    padding: 14px;
+    background-color: #f8f8f8;
+}
+
+.tri {
+    position: absolute;
+    bottom: 20px;
+    left: -14px;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-right-color: #f8f8f8;
+}
+

@@ -1,0 +1,161 @@
+/* 注册页样式 */
+
+/* 版心 */
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 头部 */
+.header {
+    height: 84px;
+    line-height: 82px;
+    padding-left: 4px;
+    border-bottom: 2px solid #b1191a;
+}
+
+
+/* 主体 */
+.registerarea {
+    height: 522px;
+    margin-top: 20px;
+    border: 1px solid #dfdfdf;
+}
+
+.register_hd {
+    height: 41px;
+    padding: 0 10px;
+    line-height: 40px;
+    font-size: 18px;
+    background-color: #ececec;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.register_hd h4 {
+    float: left;
+    font-weight: 400;
+}
+
+.login {
+    float: right;
+    font-size: 14px;
+}
+
+.login a {
+    color: #cb323b;
+}
+
+.register_bd {
+    width: 600px;
+    margin: 50px auto 0;
+    font-size: 14px;
+}
+
+.register_bd ul li {
+    margin-bottom: 20px;
+}
+
+.register_bd ul li label {
+    display: inline-block;
+    width: 88px;
+    text-align: right;
+}
+
+.register_bd ul li .inp {
+    width: 242px;
+    height: 37px;
+    margin-right: 10px;
+    padding: 0 10px;
+    border: 1px solid #999;
+}
+
+
+.error {
+    color: #df3033;
+}
+
+.success {
+    color: #40b83f;
+}
+
+.error_icon,
+.success_icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-right: 4px;
+    background: url(../images/error.png) no-repeat;
+}
+
+.success_icon {
+    background: url(../images/success.png) no-repeat;
+}
+
+.safe {
+    padding-left: 150px;
+}
+
+.safe em {
+    color: #fff;
+    padding: 0 12px;
+}
+
+.weak {
+    background-color: #de1111;
+}
+
+.middle {
+    background-color: #40b83f;
+}
+
+.strong {
+    background-color: #f79100;
+}
+
+.agree {
+    padding-left: 95px;
+    vertical-align: middle;
+    font-size: 12px;
+}
+
+.agree input {
+    margin-right: 12px;
+}
+
+.agree a {
+    color: #1ba1e6;
+}
+
+.btn {
+    width: 200px;
+    height: 34px;
+    margin: 30px 0 0 100px;
+    background-color: #c81623;
+    color: #fff;
+}
+
+
+/* 页脚 */
+.footer {
+    height: 120px;
+}
+
+/* 版权声明 */
+.footer .mod_copyright {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.footer .mod_copyright .links {
+    margin-bottom: 15px;
+}
+
+.footer .mod_copyright .links a {
+    padding: 0 3px;
+}
+
+.footer .mod_copyright .copyright {
+    line-height: 20px;
+}
